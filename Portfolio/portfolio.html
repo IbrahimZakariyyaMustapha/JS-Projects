@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Web Developer</title>
+  <meta name="description" content="Portfolio of Your Name, a web developer who builds elegant, fast websites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Ibrahim Zakariyya Mustapha</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <p class="hero-kicker">Web developer</p>
+      <h1 class="hero-title">I build websites<br>that feel <em>considered.</em></h1>
+      <p class="hero-lead">Clean code, refined design, and pages that load fast on every screen. Based in Bauchi State,
+        working worldwide.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#projects">View my work</a>
+        <a class="btn btn-line" href="#contact">Get in touch</a>
+      </div>
+      <div class="code-window" aria-hidden="true">
+        <div class="code-bar"><span></span><span></span><span></span></div>
+        <pre><code><span class="c-k">const</span> developer = {
+  name: <span class="c-s">"Ibrahim Zakariyya Mustapha"</span>,
+  focus: [<span class="c-s">"HTML"</span>, <span class="c-s">"CSS"</span>, <span class="c-s">"JavaScript"</span>],
+  currently: <span class="c-s">"building something good"</span>
+};</code></pre>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <div class="portrait" role="img" aria-label="Portrait placeholder">
+          <img src="Portfoli_Images/albani.jpg" alt="My profile picture">
+        </div>
+        <div class="about-text">
+          <h2>About me</h2>
+          <p>Hi, I'm Ibrahim Zakariyya Mustapha. I design and build websites with careful typography, generous space, and code that is
+            easy to maintain.</p>
+          <p>I started with HTML and CSS, fell in love with making things work in the browser, and now I'm growing into
+            JavaScript and modern front-end tools. I care about the details most people only feel.</p>
+          <p>Away from the screen I cook, read, and look for the next small project to finish.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <h2>Skills</h2>
+      <p class="section-lead">The tools I use to turn ideas into working pages.</p>
+      <div class="skill-list">
+        <div class="skill-group">
+          <h3>Front end</h3>
+          <ul>
+            <li>HTML5 and semantic markup</li>
+            <li>CSS Grid, Flexbox, animations</li>
+            <li>Responsive, mobile-first layouts</li>
+            <li>JavaScript (ES6+)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git and GitHub</li>
+            <li>VS Code</li>
+            <li>Chrome DevTools</li>
+            <li>Figma basics</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Currently learning</h3>
+          <ul>
+            <li>React</li>
+            <li>Accessibility best practices</li>
+            <li>Web performance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <h2>Selected projects</h2>
+      <p class="section-lead">A few things I've built. Swap these for your own.</p>
+
+      <article class="project">
+        <div class="project-art art-1" aria-hidden="true"><img src="Portfoli_Images/her-kit.png" alt="" class="project-art-image-1"></div>
+        <div class="project-info">
+          <h3>Nuriya's Kitchen</h3>
+          <p>A warm recipe website with a sticky header, a responsive recipe grid, and soft hover details. Built with
+            HTML and CSS.</p>
+          <p class="tags">HTML, CSS, Responsive design</p>
+          <a class="text-link" href="#">View project</a>
+        </div>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-art art-2" aria-hidden="true"><img src="Portfoli_Images/blog.png" alt="" class="project-art-image-1"></div>
+        <div class="project-info">
+          <h3>Personal Blog</h3>
+          <p>A clean, purple-themed blogg homepage with a hero banner, three featured article cards, an About Me section, a newsletter signup, and a four column footer. Built with HTML and CSS, using flexbox for the layout and smooth hover effects on buttons.</p>
+          <p class="tags">HTML, CSS, Flexbox</p>
+          <a class="text-link" href="#">View project</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-art art-3" aria-hidden="true"><img src="Portfoli_Images/images.jpg" alt="Rock Paper Scissors game image" class="project-art-image-1"></div>
+        <div class="project-info">
+          <h3>Rock Paper Scissors</h3>
+          <p>A fast, interactive browser game where you play againt the computer.Pick rock, paper, or scissors, and the game picks a random move, decide the winner, and keeps running score. Built with HTML, CSS, and Javascript to practice DOM manipulation, even handling, and game logic.</p>
+          <p class="tags">HTML, CSS, JavaScript</p>
+          <a class="text-link" href="#">View project</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-grid">
+        <div>
+          <h2>Let's work together</h2>
+          <p class="section-lead">Have a project in mind, or just want to say hello? Send a message and I'll reply
+            within two days.</p>
+          <p class="contact-mail">izakariyya89@gmail.com</p>
+        </div>
+        <form id="contact-form" novalidate>
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <p class="form-status" id="form-status" role="status"></p>
+          <button class="btn btn-gold" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Ibrahim Zakariyya Mustapha. Designed and built by hand.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
